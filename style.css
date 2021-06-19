@@ -147,6 +147,7 @@ button a{
     .container, .volunteer-main-page{
         max-width: 100%;
         margin: 0 auto;
+        overflow: hidden;
     }
     .form-group{
         display: flex;
@@ -159,6 +160,7 @@ button a{
         width: 100%;
         padding: 10px;
         margin: 10px 0;
+        overflow: hidden;
     }
     button{
             cursor: pointer;
