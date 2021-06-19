@@ -148,18 +148,22 @@ button a{
         max-width: 100%;
         width: 450px;
         margin: 0 auto;
-        overflow: hidden;
+    }
+    .form{
+        margin: 0;
+        padding: 30px 10px;
     }
     .form-group{
         display: flex;
         flex-direction: column;
         margin: 0;
+        padding: 0 20px;
     }
     .form-group .form-control{
         border: 1px solid #68A2FF;
         border-radius: 4px;
-        width: 100%;
         padding: 10px;
+        width: 100%;
         margin: 10px 0;
         overflow: hidden;
     }
@@ -171,8 +175,8 @@ button a{
             color: #fff;
             display: block;
             font-size: 16px;
-            margin: 20px 0;
-            padding: 5px;
-            width:100%;
+            margin: 20px auto;
+            padding: 5px 10px;
+            width: 90%;
     }
 }
