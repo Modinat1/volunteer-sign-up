@@ -79,7 +79,7 @@ header{
     border-color: #777;
 }
 .form-group .form-control::placeholder{
-    font-size: 1em;
+    font-size: 1.2em;
 }
 select{
     font-size: 1em;
@@ -120,6 +120,9 @@ margin-bottom: 10px;
     width: 100%;
     padding: 10px;
 }
+.cv-input::placeholder{
+    font-size: 1.2em;
+}
 
 button {
     cursor: pointer;
@@ -140,28 +143,19 @@ button a{
 }
 
 @media only screen and (max-width: 800px){
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 500px;
-        min-height: 100%;
+    .container, .volunteer-main-page{
+        width: 420px;
         margin: 10px auto;
-        
+        padding: 5px;
     }
-    .wrapper{
-        background-color: #fff;
-        width: 500px;
-        margin: 20px auto;
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-        0 10px 10px rgba(0,0,0,0.22);
-        border-radius:15px;
-        padding: 20px;
-        min-height: 100vh;
+    .form{
+        margin: 0;
+        padding: 0;
     }
     .form-group{
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
     .form-group .form-control{
         border: 1px solid #68A2FF;
@@ -170,6 +164,15 @@ button a{
         margin: 5px 0;
     }
     button{
-        width: 100%;
+            cursor: pointer;
+            background-color: #2176FF;
+            border: 2px solid #2176FF;
+            border-radius: 4px;
+            color: #fff;
+            display: block;
+            font-size: 16px;
+            margin: 20px 0;
+            padding: 5px;
+            width:100%;
     }
 }
