@@ -13,57 +13,26 @@ body{
     padding: 0;
     min-height: 100vh;
 }
-header{
-    background-color: #68A2FF;
-    color: #fff;
-    padding: 10px;
-}
 .container{
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
     max-width: 80%;
-    margin: 20px auto;
+    width: 500px;
+    margin: 0 auto;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
     0 10px 10px rgba(0,0,0,0.22);
     border-radius:15px;
-}
-.volunteer-main-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    margin: 0 auto;
-    min-height: 100vh;
-    flex-direction: column;
     padding: 20px;
-    min-height: 100vh;
-}
-.volunteer-main-page h3{
-    text-align: center;
-    color: #2176FF;
-}
-.volunteer-main-page p{
-    text-align: center;
-}
-.form{
-    margin: 0;
-    padding: 30px 40px;
-}
-.form h4{
-    font-weight: inherit;
-    text-align: center;
 }
 .form-logo{
     margin: 20px auto;
     display: flex;
     justify-content: center;
 }
+.form h4{
+    font-weight: inherit;
+    text-align: center;
+}
 .form-group{
     display: flex;
-    margin: 10px;
 }
 .column{
     flex-direction: column;
@@ -71,45 +40,29 @@ header{
 .form-group .form-control{
     border: 1px solid #68A2FF;
     border-radius: 4px;
-    width: calc(100% - 5px);
+    width: calc(100% - 10px);
     padding: 10px;
-    margin: 10px 0;
-}
-.form-group .form-control:focus{
-    outline: 0;
-    border-color: #777;
+    margin: 5px;
 }
 .form-group .form-control::placeholder{
     font-size: 1.2em;
 }
-select{
-    font-size: 1em;
-    width: 100%;
-    border: 1px solid #68A2FF;
-    border-radius: 4px;
-    margin: 10px 0;
-    padding: 10px;
-}
-textarea{
-    width: 410px;
-    border: 1px solid #68A2FF;
-    border-radius: 4px;
-    margin: 10px 0;
-}
-textarea:focus{
-    outline: 0;
-    border-color: #777 
-}
-
 .birthdate-input{
     display: flex;
 }
-.birthdate-input .form-control{
-    width: 55px;
-    margin-right: 5px;
+select{
+    border: 1px solid #68A2FF;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
 }
-.address .form-control{
-margin-bottom: 10px;
+textarea{
+    border: 1px solid #68A2FF;
+    border-radius: 4px;
+    width: 100%;
+    margin: 5px;
 }
 .address2{
     margin-top: 16px;
@@ -118,23 +71,20 @@ margin-bottom: 10px;
     text-align: left;
 }
 .cv-input{
-    width: 100%;
     padding: 10px;
+    width: 100%;
 }
 .cv-input::placeholder{
     font-size: 1.2em;
 }
-
 button {
     cursor: pointer;
     background-color: #2176FF;
-    border: 2px solid #2176FF;
     border-radius: 4px;
     color: #fff;
-    display: block;
     padding: 10px;
+    margin-top: 20px;
     font-size: 16px;
-    margin: 20px 0;
     width:100%;
 }
 button a{
@@ -142,41 +92,43 @@ button a{
     text-decoration: none;
     cursor: pointer;
 }
-
 @media only screen and (max-width: 600px){
-    .container, .volunteer-main-page{
-        max-width: 100%;
-        width: 450px;
-        margin: 0 auto;
-    }
-    .form{
-        margin: 0;
-        padding: 30px 10px;
-    }
     .form-group{
         display: flex;
         flex-direction: column;
-        margin: 0;
-        padding: 0 20px;
     }
     .form-group .form-control{
         border: 1px solid #68A2FF;
         border-radius: 4px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+    }
+    select{
+        border: 1px solid #68A2FF;
+        border-radius: 4px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px; 
+    }
+    textarea{
+        border: 1px solid #68A2FF;
+        border-radius: 4px;
+        width: 100%;
+        margin: 5px;
+    }
+    .birthdate-input{
+        display: flex;
+        width: 100%;
+    }
+    .cv-input{
         padding: 10px;
         width: 100%;
-        margin: 10px 0;
-        overflow: hidden;
+    }
+    .cv-input::placeholder{
+        font-size: 1.2em;
     }
     button{
-            cursor: pointer;
-            background-color: #2176FF;
-            border: 2px solid #2176FF;
-            border-radius: 4px;
-            color: #fff;
-            display: block;
-            font-size: 16px;
-            margin: 20px auto;
-            padding: 5px 10px;
-            width: 90%;
+        width: 100%;
     }
 }
