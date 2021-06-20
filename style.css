@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 :root{
     box-sizing: border-box;
 }
@@ -16,14 +17,119 @@ body{
 .container{
     max-width: 80%;
     width: 500px;
-    margin: 0 auto;
+    margin: 50px auto;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
     0 10px 10px rgba(0,0,0,0.22);
     border-radius:15px;
     padding: 20px;
 }
-.form-logo{
-    margin: 20px auto;
+.volunteer-main-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    width: 500px;
+    margin: 0 auto;
+    min-height: 100vh; 
+}
+.volunteer-main-page h3, p{
+    text-align: center;
+}
+.navbar{
+    background-color: #68A2FF;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+.toggler {
+    opacity: 0;
+  }
+header{
+    background-color: white;
+}
+.logo > img{
+    width:11rem;
+}
+nav{
+    width:60%;
+    padding-top: 0;
+    font-size: 16px;
+}
+.navMenu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.navMenu > li > a{
+    text-decoration: none;
+    color: white;    
+}
+.navMenu > li > a > button{
+    width: 6rem;
+    padding: .25rem;
+    font-weight: 500;
+}
+.reg{
+    background-color: #68A2FF;
+    border: 1px solid white;
+    color: white;
+
+}
+.log{
+    background-color: white;
+    border: 1px solid white;
+    color: #68A2FF;
+}
+footer{
+    background-color: #68A2FF;
+    width: 100%;
+    color:white;
+    padding: 2rem ;
+}
+.mainFooter{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin:auto;
+}
+.mainFooter > div{
+    align-content: center;
+}
+.mainFooter > div >h5{
+    font-size: 22px;
+    margin-bottom: 1.2rem;
+}
+.mainFooter > div > ul{
+    color: white;
+    padding-left: 0;
+}
+.mainFooter > div > ul > li{
+    list-style-type: none;
+    margin-bottom: .5rem;
+    font-size: 15px;
+    font-weight: 100;
+}
+.mainFooter > div > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+.mainFooter > div:first-of-type > ul{
+    margin-top: 1rem;
+    text-align: center;
+}
+.contact{
+    border: 2px solid white;
+    background-color: #68A2FF;
+    padding: .25rem 1rem;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5rem;
+}
+.form .form-logo{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -92,7 +198,114 @@ button a{
     text-decoration: none;
     cursor: pointer;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
+    .navbar{
+        background-color: #68A2FF;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+    }
+    .navMenu{
+        text-align: center;
+        flex-direction: column;
+        display:none;
+        width: 40%;
+        padding: 0;
+    }
+    
+    .navMenu > li {
+        margin-bottom: 1rem;
+        border-top: 1px dashed white; 
+        width: 100%;   
+        padding-top: 1rem;
+    }
+    .navMenu > li:first-of-type{
+        border-top: none;
+    }
+    .navMenu > li:hover{
+        background-color: #68a2ff9f;
+    }
+    .toggler {
+        position: absolute;
+        top: 0;
+        left: 80%;
+        z-index: 2;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        opacity: 0;
+      }
+      .hamburger {
+        position: absolute;
+        top: 0;
+        left: 80%;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        padding: .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hamburger>div {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+      }
+      .hamburger>div:before,
+      .hamburger>div:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -6px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+      }
+      .hamburger>div:after{
+        top: 6px;
+      }
+      .toggler:checked+.hamburger>div {
+        transform: rotate(135deg);
+      }
+    
+      .toggler:checked+.hamburger>div:before,
+      .toggler:checked+.hamburger>div:after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      .toggler:checked+.hamburger>div:after {
+        opacity: 0;
+      }
+      .toggler:checked~.navMenu {
+        display:flex;
+        position: absolute;
+        z-index: 2;
+        background-color: #68A2FF;
+        margin-top: 1rem;
+        right: 1%;
+
+        opacity: 1;
+        transition: opacity 0.4s ease;
+      }
+    .navMenu > li > a > button{
+        width: 60%;
+    }
+    .mainFooter{
+        width:50% ;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainFooter > div{
+        align-content: flex-start;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
     .form-group{
         display: flex;
         flex-direction: column;
